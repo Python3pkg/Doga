@@ -49,9 +49,9 @@ class SocketInterface:
         try:
             self.raw_socket = socket.socket(
                 socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(0x0003))
-        except socket.error, msg:
-            print "unable to create socket"
-            print "Error Code %d : Message %s" % (msg[0], msg[1])
+        except socket.error as msg:
+            print("unable to create socket")
+            print("Error Code %d : Message %s" % (msg[0], msg[1]))
             sys.exit()
 
     def capture(self, sock):

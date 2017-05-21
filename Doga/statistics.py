@@ -11,8 +11,8 @@ import time
 import threading
 from collections import Counter
 
-from config.configer import value
-from thread_jobs import Timer
+from .config.configer import value
+from .thread_jobs import Timer
 
 
 class Statistics:

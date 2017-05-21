@@ -7,7 +7,7 @@ This module gives other modules access to use configuration values
 """
 
 import os
-from ConfigParser import ConfigParser
+from configparser import ConfigParser
 
 # configuration file path
 config_file_path = os.path.join(os.path.dirname(__file__), 'config.ini')
